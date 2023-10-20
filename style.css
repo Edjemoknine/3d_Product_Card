@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  
+   
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    perspective: 1000Px;
+    /* background-color: red; */
+}
+
+.card{
+    transform-style:preserve-3d;
+    width: 20rem;
+    min-height: 80vh;
+    padding: 0 3rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2),
+    0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+.sneaker{
+
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.circle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(to right,red,black);
+    z-index: 1;
+}
+img{
+    width: 200px;
+    z-index: 2;
+    transition: all .9s ease-in-out;
+}
+h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transition:all .5s ease-in-out;
+    
+}
+p{
+    color: #585858;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: 1.6;
+}
+.sizes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sizes button{
+    padding: .4rem 1rem;
+    border: none;
+    font-size: .6rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.active{
+    color: white;
+    background-color: #585858;
+}
+.purchase button{
+    width: 100%;
+    margin-top: 2rem;
+    padding: .5rem;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(168, 7, 7);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
